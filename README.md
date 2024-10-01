@@ -7,8 +7,8 @@ SF Food Trucks
 
 #### Docker
 ```
-> step1: docker search elasticsearch
-> step2: docker pull docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+step1: docker search elasticsearch
+step2: docker pull docker.elastic.co/elasticsearch/elasticsearch:6.3.2
 step3: docker run -d --name es -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.3.2
 step4: docker container ls
 step5: docker container logs es
